@@ -6,11 +6,15 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Home</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
     </head>
     <body>
+        <!--navbar is started-->
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">KEDAI AGROFARM</a>
@@ -23,40 +27,77 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
+                    <a class="nav-link" href="services.html">Services</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Fertilizers</a>
+                    <a class="nav-link" href="fertilizer.html">Fertilizers</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link"  href="#">Contact</a>
+                    <a class="nav-link"  href="contact.html">Contact</a>
                   </li>
                 </ul>
               </div>
             </div>
           </nav>
+           <!--navbar is ended-->
+           <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./imgs/bag.jpeg" class="d-block w-100 rounded-5" width=80% height="5%" alt="pom1">
+              </div>
+              <div class="carousel-item">
+                <video controls autoplay=on class="video p-3 m-5"> <source src="./video/vid.mp4" class="d-block w-100 rounded-5 " type="video/mp4" width=80% alt="pom2" />
+                </video>
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/pom3.jpeg" class="d-block w-100 rounded-5" width=80% alt="pom3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-visible">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-visible">Next</span>
+            </button>
+          </div>
+           <!--footer is started-->
 
           <footer class="footer">
             <div class="container text-center">
               <div class="row">
                 <div class="col-md-4">
-                  <h5>Contact Us</h5>
+                    <h5>Quick links</h5>
+                    <ul type="none">
+                      <a class="text-decoration-none text-dark" href="index.html"><li>Home</li></a>
+                      <a class="text-decoration-none text-dark" href="services.html"><li>Services</li></a>
+                      <a class="text-decoration-none text-dark" href="fertilizer.html"><li>Fertilizer</li></a> 
+                      <a class="text-decoration-none text-dark" href="contact.html"><li>Contact</li></a>
+                    </ul>
+                   </div>
+                   <div class="col-md-4">
+                    <h5>Contact</h5>
+                    <ul type="none">
+                    <a class="text-decoration-none text-dark" href="mailto:sakshishewale2808@gmail.com"> <li>sakshishewale2808@gmail.com</li></a>
+                   <a class="text-decoration-none text-dark" href="tel:9823882548"> <li>+91 9823882548</li></a>
+                    </ul>
+                  </div>
+                <div class="col-md-4">
+                  <h5>Location</h5>
                   <p>A/P Chaugaon<br>Satana,Nashik,Maharashtra<br>India</p>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.584663704855!2d74.24602157403402!3d20.60501238094039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bde89a439777c9f%3A0x730345b3dc15261a!2sS%20S%20FARMS%20Satana!5e0!3m2!1sen!2sin!4v1715352510563!5m2!1sen!2sin" width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <div class="col-md-4">
-                  <h5>Email</h5>
-                  <a
-                  href="mailto: bhushanpotdar3@gmail.com"> sakshishewale2808@gmail.com</a></div>
-                </div>
-                <div class="col-md-4">
-                  <h5>Phone</h5>
-                  <a href="tel:7744049590"
-                    class="b">+91 9823882548</a></div>
+               
+              
                 </div>
               </div>
               <hr>
               <span class="text-muted">© 2024 My Website. All rights reserved.</span>
             </div>
           </footer>
+           <!--footer is ended-->
+          
+          
     </body>
 </html>
