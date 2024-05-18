@@ -28,11 +28,36 @@
               transform: scale(1.3);
               opacity: .3;
           }
+          .kedai{
+            width:30%;
+            font-size:18px;
+            font-weight:5px;
+            
+           
+          }
+          @keyframes rotate360 {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        .rotate {
+            display: inline-block;
+            animation: rotate360 2s linear forwards;
           
+        }
+        .malak{
+          margin-left:120px;
+        }
+        .malak2{
+          margin-left:1020px;
+        }
     </style>  
 </head>
 <body>
-     <!--navbar is started-->
+     <!--navbar is started--><br><br><br><br><br>
      <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
         <div class="container-fluid shadow">
           <a class="navbar-brand" href="#">
@@ -68,6 +93,38 @@
           </div>
         </center>
         </div>
+          <!--dis starts-->
+    <div>
+      <h1 class="justify-content-center d-flex rotate">
+       Kedai AgroFarm 
+     </h1>
+     <center>
+     <div class="kedai justify-content-start d-flex text-secondary text-muted">
+       My Website name is Kedai Agrofarm <br>because of my grandparents name.<br>
+       Keda + Indubai = Kedai<br>
+     </div>
+   
+  </center>
+ <h1 class="malak">
+  KEDAI
+ </h1>
+ <h1 class="malak2">
+  KEDAI
+ </h1>
+  <center>
+    <div>
+      <button ondblclick="family()">
+        <img src="./../imgs/fam1.jpeg" id="fam" height="500" >
+      </button>
+    </div>
+  </center>
+  <script>
+    function family(){
+      let fam=document.getElementById('fam');
+      fam.src="./../imgs/malak.jpeg";
+    }
+  </script>
+  
    
     
    

@@ -26,25 +26,8 @@
             width:250px;
             border:2px solid black;
         }
-        .kedai{
-          background-color:pink;
-          border:5px solid black;
-          width:60%;
-         
-        }
-        @keyframes rotate360 {
-          from {
-              transform: rotate(0deg);
-          }
-          to {
-              transform: rotate(360deg);
-          }
-      }
-      .rotate {
-          display: inline-block;
-          animation: rotate360 2s linear forwards;
-        
-      }
+       
+    
     </style>
 </head>
 <body>
@@ -75,7 +58,7 @@
             </div>
         </div>
     </nav>
-    <!--navbar is ended-->
+    <!--navbar is ended--><br><br><br><br><br>
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner" data-bs-interval="1000">
             <div class="carousel-item active">
@@ -98,19 +81,6 @@
         </button>
     </div>
     <br>
-    <!--dis starts-->
-    <div>
-     <h1 class="justify-content-center d-flex rotate">
-      Kedai AgroFarm 
-    </h1>
-    <center>
-    <div class="kedai justify-content-center d-flex text-secondary text-muted">
-      <p>My Website name is <b>Kedai Agrofarm</b> because of my grandparents name.</p>
-      <p>Keda + Indubai = Kedai</p>
-    </div>
-   
-  </center>
-    <!--dis ends-->
     <center>
         <h1 >Tour to our farm</h1>
         <hr class="hr">
@@ -138,9 +108,9 @@
         function Toggle1() {
             if (btnvar1.style.color == "red") {
                 btnvar1.style.color = "grey";
-                confirm("Oops sorry...we are not satisfies you");
+                alert("Oops sorry...we are not satisfies you");
             } else {
-                confirm("You like our farm!");
+                alert("You like our farm!");
                 btnvar1.style.color = "red";
             }
         }

@@ -13,8 +13,110 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </head>
+    <style>
+      .btn{
+        color:black;
+        background-color:white;
+        border:1px solid black;
+    }
+    .btn:hover{
+        color:white;
+        background-color:black;
+    }
+      .name-customer {
+        margin-bottom: 35px;
+        width: 600px;
+        height: 50px;
+      }
+      
+      .message-customer {
+      
+        width: 600px;
+        height: 150px;
+      }
+      .contact {
+        padding-left: 5px;
+        width: 50%;
+        padding-right: 5px;
+      }
+      
+      .contact-main {
+        margin-top: 60px;
+        display: flex;
+      }
+      .fa-solid {
+        font-size: 25px;
+        margin-left: 10px;
+      }
+      
+      .anchor {
+        font-size: 20px;
+        text-decoration: none;
+        color:black;
+        background-color:white;
+      }
+      .a{
+        font-size: 20px;
+        text-decoration: none;
+       color: black;
+      
+      }
+      a:hover {
+        color: rgb(83, 75, 60)
+      }
+      span {
+        font-size: 20px;
+        font-weight: 600;
+      }
+      
+     
+      
+      .fa-brands {
+        font-size: 35px;
+        margin-left: 7px;
+      }
+      
+      
+      @media screen and (max-width:821px) {
+        .contact-main {
+            margin-top: 60px;
+            display: block;
+        }
+      
+        .contact {
+            padding-left: 5px;
+            padding-right: 5px;
+            width: 100%;
+        }
+      
+        .name-customer {
+            padding-right: 5px;
+            width: 100%;
+            height: 50px;
+            margin-bottom: 15px;
+        }
+      
+        .message-customer {
+            padding-right: 5px;
+            width: 100%;
+            height: 100px;
+      
+        }
+      
+        .button {
+            padding-right: 5px;
+            width: 100%;
+            height: 50px;
+         
+        }
+      
+        iframe {
+            height: 30px;
+        }
+      }
+    </style>
     <body>
-         <!--navbar is started-->
+         <!--navbar is started--><br><br>
          <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
             <div class="container-fluid shadow">
               <a class="navbar-brand" href="#">
@@ -42,7 +144,73 @@
             </div>
           </nav>
            <!--navbar is ended-->
-      
+           <div class="contact-main">
+
+            <div class="contact">
+                <p style="font-size: 30px; font-weight:600; margin-left:10px">Connect With Us</p>
+                <p style="font-size: 18px; margin-left:10px; margin-right:10px; text-align:justify">Welcome to Kedai..!
+                  <br>Here we are for any query about your farm and if you are interested to connect with us for sharing your experience . Please contact us.
+                </p><br>
+    
+                <i class="fa-solid fa-phone-volume"></i>&ensp;&ensp;&ensp;&ensp;&ensp;<span>Mobile</span> <br><a
+                    href="tel:+91 9823882548" class="anchor">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;+91 9823882548</a><br><br>
+                <i class="fa-solid fa-envelope"></i>&ensp;&ensp;&ensp;&ensp;&ensp;<span>Email</span> <br><a
+                    href="mailto: sakshishewale2808@gmail.com"
+                    class="anchor">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;sakshishewale2808@gmail.com</a><br><br>
+                <i class="fa-solid fa-location-dot"></i></i>&ensp;&ensp;&ensp;&ensp;&ensp;<span>Location</span><br>
+                <a href="https://maps.app.goo.gl/HgBC1sEZVheFVNid7" class="anchor">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;A\P Chaugaon,<br>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Tal-Satana,Dist-Nashik,<br>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Maharashtra,India.
+                </a><br><br><br>
+    
+    
+            </div>
+    
+    
+            <div class="ms-4 me-4 ">
+              <h1>Contact Us</h1>
+              <form id="contactForm">
+                  <input type="text" id="name" class="form-control shadow name-customer " placeholder="Your Name">
+                  <input type="email" id="email" class="form-control shadow  name-customer" placeholder="Your Email">
+                  <textarea id="message" class="form-control shadow message-customer" placeholder="Your Message"></textarea>
+
+                  <button type="submit" class="btn m-2 ">Send</button>
+              </form>
+            </div>
+    
+    
+        </div>
+        <br>
+        <center>
+            <div>
+                <p style="font-size: 30px; font-weight:600; margin-left:10px">Follow Us</p>
+    
+                <a href="https://www.instagram.com/kunal_shewale_02/" class="a"><i
+                        class="fa-brands fa-instagram"></i></a>&emsp;<a
+                    href="https://www.linkedin.com/in/sakshishewale" class="a">
+                    <i class="fa-brands fa-linkedin"></i></a>&emsp;<a href="https://wa.me/9823882548"  class="a"
+                     target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                &emsp;<a href="https://github.com/sakshishewale2808"  class="a"><i
+                        class="fa-brands fa-github"></i></a>
+            </div>
+        </center>
+        <br><br>
+    
+    
+    
+        <script>
+          document.getElementById('contactForm').addEventListener('submit', function(event) {
+              event.preventDefault();
+              let name = document.getElementById('name').value.trim();
+              let email = document.getElementById('email').value.trim();
+              let message = document.getElementById('message').value.trim();
+  
+              if (name === "" || email === "" || message === "") {
+                  alert("Please fill in all fields.");
+                  return;
+              }
+             alert("You submit the form! Connect soon")
+              document.getElementById('contactForm').reset();
+          });
+      </script>
         
            <script src="https://kit.fontawesome.com/0dcf08ad5b.js" crossorigin="anonymous"></script>
     </body>
