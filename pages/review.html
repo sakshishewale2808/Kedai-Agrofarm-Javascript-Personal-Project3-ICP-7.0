@@ -1,32 +1,43 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Reviewfarm</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Reviewfarm</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link href="./../css/review.css">
-    
-        
-    </head>
-    <body>
-       <!--navbar is started--><br><br><br><br><br>
-       <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
-        <div class="container-fluid shadow">
+    <link href="./../css/review.css" rel="stylesheet">
+    <style>
+        .navbar {
+            margin-bottom: 50px; /* Adjust as needed */
+        }
+        .card {
+            margin: 0 auto; /* Center the card */
+            margin-top: 50px; /* Adjust as needed */
+            max-width: 90%; /* Adjust as needed */
+        }
+        .container-review {
+            margin-top: 50px; /* Adjust as needed */
+            padding: 20px; /* Adjust as needed */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar starts -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary shadow">
+        <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="./../icons/logo.png" height="80">
+            <img src="./../icons/logo.png" height="80" alt="Logo">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-evenly d-flex" id="navbarNav">
+          <div class="collapse navbar-collapse justify-content-evenly" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item ">
-                <a class="nav-link active m-l-1" aria-current="page" href="./index.html">Home</a>
+                <a class="nav-link active m-l-1" aria-current="page" href="./../index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" href="./../pages/about-us.html">About</a>
@@ -41,34 +52,32 @@
           </div>
         </div>
       </nav>
-       <!--navbar is ended-->
+    <!-- Navbar ends -->
 
-            <div class="row">
-             
-                <div class="card col-md-5 my-md-5 mx-5 col-lg-4 col-xs-12 shadow p-md-4 px-5 m-l-5">
-                  <h4 class="my-3">WRITE A REVIEW</h4>
-                  <p class="mb-2">Name : </p>
-                  <input type="text" placeholder="Enter Name" required class="mb-4 p-2 px-3 rounded border border-black"
-                    id="input-Name">
-                  <p class="mb-2 col-6">Review : </p>
-                  <textarea name="Message" rows="4" placeholder="Write Your Review" required
-                    class="p-3 rounded border border-black" id="input-Msg"></textarea>
-                  <div class="mt-4 mb-4">
-                    <button type="button" class="px-4 py-2 rounded btn" onclick="cancelReview()">&nbsp; Cancel &nbsp;</button>
-                    <button type="button" class="px-5 py-2 rounded btn" onclick="addReview()">Add</button>
-                  </div>
-              </div>
-              <div class="container-review col-lg-7 col-md-7 col-xs-12 mt-5 d-flex flex-wrap justify-content-evenly p-md-4 rounded shadow">
-                <h1 class="text-center">See Reviews</h1>
-                <div class="row">
-                  <div class=" d-flex flex-wrap justify-content-evenly p-md-4 rounded shadow" id="review-Box">
-                  </div>
-                </div>
+    <div class="row">
+        <div class="card col-md-5 my-md-5 mx-auto col-lg-4 col-xs-12 shadow p-md-4 px-5 m-l-5">
+            <h4 class="my-3">WRITE A REVIEW</h4>
+            <p class="mb-2">Name:</p>
+            <input type="text" placeholder="Enter Name" required class="mb-4 p-2 px-3 rounded border border-black"
+                id="input-Name">
+            <p class="mb-2 col-6">Review:</p>
+            <textarea name="Message" rows="4" placeholder="Write Your Review" required
+                class="p-3 rounded border border-black" id="input-Msg"></textarea>
+            <div class="mt-4 mb-4">
+                <button type="button" class="px-4 py-2 rounded btn" onclick="cancelReview()">&nbsp; Cancel &nbsp;</button>
+                <button type="button" class="px-5 py-2 rounded btn" onclick="addReview()">Add</button>
+            </div>
         </div>
-       
-          </div>
-         
-       <script src="./../js/review.js"></script>
-          <script src="https://kit.fontawesome.com/0dcf08ad5b.js" crossorigin="anonymous"></script>
-      </body>
+        <div class="container-review col-lg-7 col-md-7 col-xs-12 mt-5 d-flex flex-wrap justify-content-evenly p-md-4 rounded shadow">
+            <h1 class="text-center">See Reviews</h1>
+            <div class="row">
+                <div class="d-flex flex-wrap justify-content-evenly p-md-4 rounded shadow" id="review-Box">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./../js/review.js"></script>
+    <script src="https://kit.fontawesome.com/0dcf08ad5b.js" crossorigin="anonymous"></script>
+</body>
 </html>

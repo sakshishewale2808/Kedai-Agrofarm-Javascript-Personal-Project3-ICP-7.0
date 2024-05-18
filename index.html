@@ -9,7 +9,6 @@
     <script src="https://kit.fontawesome.com/029a190c6b.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./../css/footer.css">
     <link rel="stylesheet" href="./../css/index.css">
     <style>
@@ -18,14 +17,14 @@
             position: sticky;
             top: 200px; 
             z-index: 1000;
-            height:50px;
+            height: 50px;
         }
         .sticky-img2 {
             position: -webkit-sticky; 
             position: sticky;
             top: 400px; 
             z-index: 1000;
-            height:50px;
+            height: 50px;
         }
         .btn {
             color: black;
@@ -36,7 +35,6 @@
             color: white;
             background-color: black;
         }
-       
         .zoom-image {
             transition: 2.3s;
         }
@@ -48,27 +46,27 @@
 </head>
 <body>
     <!-- Navbar starts -->
-    <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
-        <div class="container-fluid shadow">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="./icons/logo.png" height="80">
+                <img src="./icons/logo.png" height="80" alt="Logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-evenly d-flex" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item ">
-                        <a class="nav-link active m-l-1" aria-current="page" href="./index.html">Home</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="./pages/about-us.html">About</a>
+                        <a class="nav-link" href="./pages/about-us.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="./pages/review.html">Review</a>
+                        <a class="nav-link" href="./pages/review.html">Review</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="./pages/contact.html">Contact</a>
+                        <a class="nav-link" href="./pages/contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -91,17 +89,17 @@
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-visible">Previous</span>
+            <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-visible">Next</span>
+            <span class="visually-hidden">Next</span>
         </button>
     </div>
     
-    <a href="http://wa.me/+919823882548" ><img src="./icons/whatsap.jpeg" class="sticky-img img-fluid" alt="Sticky Image"></a><br><br>
-    <a href="tel:9823882548"><img src="./icons/phone.jpeg" class="sticky-img2 img-fluid" alt="Sticky Image2"></a><br><br>
-   
+    <a href="http://wa.me/+919823882548"><img src="./icons/whatsap.jpeg" class="sticky-img img-fluid" alt="WhatsApp"></a><br><br>
+    <a href="tel:9823882548"><img src="./icons/phone.jpeg" class="sticky-img2 img-fluid" alt="Phone"></a><br><br>
+
     <center>
         <h1>Tour to our farm</h1>
         <hr class="hr">
@@ -117,7 +115,7 @@
             <div class="card rounded-5 text-muted img-fluid" style="width: 38rem;">
                 <img src="./../imgs/bag.jpeg" class="card-img-top img-fluid" id="media" alt="pome">
                 <div class="card-body">
-                    <h5 class="card-title" id="title">baby flowers</h5>
+                    <h5 class="card-title" id="title">Baby flowers</h5>
                     <p class="card-text" id="descript">This step is making flowers starting. After this stage of flowers becomes fruit which is very juicy and tasty.</p>
                     <a href="review.html" class="btn">Add Review</a>
                     <button onclick="Toggle1()" id="btnh1" class="btn1 border-0"><i class="fa-solid fa-heart mt-1 fs-2"></i></button>
@@ -125,8 +123,6 @@
             </div>
         </div>
     </center>
-
-   
 
     <script src="https://kit.fontawesome.com/0dcf08ad5b.js" crossorigin="anonymous"></script>
     <!-- Footer starts -->
