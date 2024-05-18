@@ -1,0 +1,16 @@
+
+.btn{
+    color:black;
+    background-color:white;
+    border:1px solid black;
+}
+.btn:hover{
+    color:white;
+    background-color:black;
+}
+.hr{
+    width:250px;
+    border:2px solid black;
+}
+
+

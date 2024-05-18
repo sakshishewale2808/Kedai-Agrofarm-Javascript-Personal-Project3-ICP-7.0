@@ -9,19 +9,8 @@
         <link rel="stylesheet" href="">
          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="./../css/footer.css">
-    <style>
-      .btn{
-        color:black;
-        background-color:white;
-        border:1px solid black;
-      }
-      .btn:hover{
-        color:white;
-        background-color:black;
-      }
-     
-    </style>
+    <link href="./../css/review.css">
+    
         
     </head>
     <body>
@@ -79,98 +68,7 @@
        
           </div>
          
-          <script>
-            let reviewListName = [];
-        let reviewListMsg = [];
-        
-        const reviewBox = document.getElementById("review-Box");
-        
-        const reviewNameItemsLS = localStorage.getItem("reviewListName");
-        const reviewMsgItemsLS = localStorage.getItem("reviewListMsg");
-        
-        if(reviewNameItemsLS){
-            reviewListName = JSON.parse(reviewNameItemsLS);
-            reviewListMsg = JSON.parse(reviewMsgItemsLS);
-            loadList();
-        }
-        
-        function addReview(){
-            const inputName = document.getElementById("input-Name");
-            const name = inputName.value;
-            const inputMsg = document.getElementById("input-Msg");
-            const msg = inputMsg.value;
-        
-            if (name) {
-                reviewListName.push(name);
-                reviewListMsg.push(msg);
-        
-                localStorage.setItem("reviewListName", JSON.stringify(reviewListName));
-                localStorage.setItem("reviewListMsg", JSON.stringify(reviewListMsg));
-        
-                inputName.value = "";
-                inputMsg.value = "";
-                loadList();
-            }
-            else {
-                alert("Please enter name");
-            }
-        }
-        
-        function loadList() {
-            reviewBox.innerHTML = "";
-        
-            for (let i = 0; i < reviewListName.length; i++) {
-                let name = reviewListName[i];
-                let msg = reviewListMsg[i];
-                reviewBox.innerHTML = reviewBox.innerHTML + `<div class="card p-3 col-md-3 col-xs-12 col-sm-4 shadow m-4">
-                <h4 class="text-center mt-3">${name}</h4>
-                <p class="mt-1 m-2 text-center">${msg}</p>
-              
-            </div>`;
-            }
-        }
-       
-        function cancelReview(){
-            const inputName = document.getElementById("input-Name");
-            const name = inputName.value;
-            const inputMsg = document.getElementById("input-Msg");
-            const msg = inputMsg.value;
-        
-            inputName.value = "";
-            inputMsg.value = "";
-        }
-          </script>
+       <script src="./../js/review.js"></script>
           <script src="https://kit.fontawesome.com/0dcf08ad5b.js" crossorigin="anonymous"></script>
-           <!--footer is started-->
-    
-  <footer class="shadow">
-    <div class="container pt-3 mt-3">
-      <div class="row  justify-content-center">
-        <div class="col-md-4 col-sm-12 footer-section ">
-          <h3>Quick Links</h3>
-          <ul>
-            <li type="none" class="footer-nav"><a href="./../index.html" class="bb">Home</a></li>
-            <li type="none" class="footer-nav"><a href="./../pages/about-us.html" class="bb">About Us</a></li>
-            <li type="none" class="footer-nav"><a href="./../pages/contact.html" class="bb">Contact</a></li>
-            <li type="none" class="footer-nav"><a href="./../pages/review.html" class="bb">review</a></li>
-          </ul>
-        </div>
-        <div class="col-md-4 col-sm-12 footer-section">
-          <h3>Contact Us</h3>
-            &nbsp;&nbsp;  &nbsp; <i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;<a
-            href="mailto: sakshishewale2808@gmail.com" class="bb footer-nav"> Mail</a> <br>
-            &nbsp;&nbsp;  &nbsp; <i class="fa-solid fa-phone"></i>&nbsp;&nbsp;&nbsp;<a href="tel:9823882548"
-            class="bb footer-nav">Call</a>  <br>
-            &nbsp;&nbsp; &nbsp; <i class="fa-brands fa-square-whatsapp"></i>&nbsp;&nbsp;&nbsp;<a href="http://wa.me/+91 9823882548"
-            class="bb footer-nav">Whatsapp</a> <br>
-        </div>
-        <div class="col-md-4 col-sm-12 footer-section">
-          <h3>Location</h3>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.584663704855!2d74.246021574034!3d20.605012380940387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bde89a439777c9f%3A0x730345b3dc15261a!2sS%20S%20FARMS%20Satana!5e0!3m2!1sen!2sin!4v1716020055291!5m2!1sen!2sin" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!--Footer start-->
       </body>
 </html>
