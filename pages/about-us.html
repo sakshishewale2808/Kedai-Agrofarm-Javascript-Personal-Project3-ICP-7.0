@@ -1,41 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fertilizers</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/029a190c6b.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./../css/footer.css">
     <style>
-        .btn{
-          color:black;
-          background-color:white;
-          border:1px solid black;
+
+        .btn {
+            color: black;
+            background-color: white;
+            border: 1px solid black;
         }
-        .btn:hover{
-          color:white;
-          background-color:black;
+        .btn:hover {
+            color: white;
+            background-color: black;
         }
-          .zoom-image {
-              transition: 2.3s;
-          }
-          
-          .zoom-image:hover {
-              transform: scale(1.3);
-              opacity: .3;
-          }
-          .kedai{
-            width:30%;
-            font-size:18px;
-            font-weight:5px;
-            
-           
-          }
-          @keyframes rotate360 {
+        .zoom-image {
+            transition: 2.3s;
+        }
+        .zoom-image:hover {
+            transform: scale(1.3);
+            opacity: .3;
+        }
+        .kedai {
+            width: 30%;
+            font-size: 18px;
+            font-weight: 5px;
+        }
+        @keyframes rotate360 {
             from {
                 transform: rotate(0deg);
             }
@@ -45,91 +42,125 @@
         }
         .rotate {
             display: inline-block;
-            animation: rotate360 2s linear forwards;
-          
+            animation: rotate360 4s linear forwards;
         }
-        .malak{
-          margin-left:120px;
+        .malak {
+            margin-left: 120px;
         }
-        .malak2{
-          margin-left:1020px;
+        .malak2 {
+            margin-left: 1020px;
         }
-    </style>  
+    </style>
 </head>
 <body>
-     <!--navbar is started--><br><br><br><br><br>
-     <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
+    <!--navbar is started--><br><br><br><br><br>
+    <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
         <div class="container-fluid shadow">
-          <a class="navbar-brand" href="#">
-            <img src="./../icons/logo.png" height="80">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-evenly d-flex" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item ">
-                <a class="nav-link active m-l-1" aria-current="page" href="./../index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="./../pages/about-us.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="./../pages/review.html">Review</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active"  href="./../pages/contact.html">Contact</a>
-              </li>
-            </ul>
-          </div>
+            <a class="navbar-brand" href="#">
+                <img src="./../icons/logo.png" height="80">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-evenly d-flex" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <a class="nav-link active m-l-1" aria-current="page" href="./../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./../pages/about-us.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./../pages/review.html">Review</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./../pages/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </nav>
-       <!--navbar is ended-->
-       <div class="album">
+    </nav>
+    <!--navbar is ended-->
+    <div class="album">
         <div>
-          <center>
-          <div>
-            <img src="./../imgs/edit.png" alt="family" class="img-fluid p-5 zoom-image" width="80%">
-          </div>
-        </center>
+            <center>
+                <div>
+                    <img src="./../imgs/edit.png" alt="family" class="img-fluid p-5 zoom-image" width="80%">
+                </div>
+            </center>
         </div>
-          <!--dis starts-->
-    <div>
-      <h1 class="justify-content-center d-flex rotate">
-       Kedai AgroFarm 
-     </h1>
-     <center>
-     <div class="kedai justify-content-start d-flex text-secondary text-muted">
-       My Website name is Kedai Agrofarm <br>because of my grandparents name.<br>
-       Keda + Indubai = Kedai<br>
-     </div>
-   
-  </center>
- <h1 class="malak">
-  KEDAI
- </h1>
- <h1 class="malak2">
-  KEDAI
- </h1>
-  <center>
-    <div>
-      <button ondblclick="family()">
-        <img src="./../imgs/fam1.jpeg" id="fam" height="500" >
-      </button>
-    </div>
-  </center>
-  <script>
-    function family(){
-      let fam=document.getElementById('fam');
-      fam.src="./../imgs/malak.jpeg";
-    }
-  </script>
-  
-   
-    
-   
-    
+        <!--dis starts-->
+        <div>
+            <h1 class="justify-content-center d-flex">
+                Kedai AgroFarm
+            </h1>
+            <center>
+                <div class="kedai justify-content-start d-flex text-secondary text-muted">
+                    My Website name is Kedai Agrofarm <br>because of my grandparents name.<br>
+                    Keda + Indubai = Kedai<br>
+                </div>
+            </center>
+            <h1 class="malak" id="kedai1">
+                
+            </h1>
+            <h1 class="malak2" id="kedai2">
+                
+            </h1>
+            <center>
+                <div>
+                    <button ondblclick="family()">
+                        <img src="./../imgs/fam1.jpeg" id="fam" height="500">
+                    </button>
+                </div>
+            </center>
+        </div>
+
+        <script>
+            function family() {
+                let fam = document.getElementById('fam');
+                fam.src = "./../imgs/malak.jpeg";
+                let malak1 = document.getElementById('kedai1');
+                malak1.classList.add('rotate');
+                malak1.innerText="केदा ";
+
+                let malak2 = document.getElementById('kedai2');
+                malak2.classList.add('rotate');
+                malak2.innerText="इंदुबाई  ";
+            }
+        </script>
+
         <script src="https://kit.fontawesome.com/0dcf08ad5b.js" crossorigin="anonymous"></script>
+         <!--footer is started-->
     
+  <footer class="shadow">
+    <div class="container pt-3 mt-3">
+      <div class="row  justify-content-center">
+        <div class="col-md-4 col-sm-12 footer-section ">
+          <h3>Quick Links</h3>
+          <ul>
+            <li type="none" class="footer-nav"><a href="./../index.html" class="bb">Home</a></li>
+            <li type="none" class="footer-nav"><a href="./../pages/about-us.html" class="bb">About Us</a></li>
+            <li type="none" class="footer-nav"><a href="./../pages/contact.html" class="bb">Contact</a></li>
+            <li type="none" class="footer-nav"><a href="./../pages/review.html" class="bb">review</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-sm-12 footer-section">
+          <h3>Contact Us</h3>
+            &nbsp;&nbsp;  &nbsp; <i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;<a
+            href="mailto: sakshishewale2808@gmail.com" class="bb footer-nav"> Mail</a> <br>
+            &nbsp;&nbsp;  &nbsp; <i class="fa-solid fa-phone"></i>&nbsp;&nbsp;&nbsp;<a href="tel:9823882548"
+            class="bb footer-nav">Call</a>  <br>
+            &nbsp;&nbsp; &nbsp; <i class="fa-brands fa-square-whatsapp"></i>&nbsp;&nbsp;&nbsp;<a href="http://wa.me/+91 9823882548"
+            class="bb footer-nav">Whatsapp</a> <br>
+        </div>
+        <div class="col-md-4 col-sm-12 footer-section">
+          <h3>Location</h3>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.584663704855!2d74.246021574034!3d20.605012380940387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bde89a439777c9f%3A0x730345b3dc15261a!2sS%20S%20FARMS%20Satana!5e0!3m2!1sen!2sin!4v1716020055291!5m2!1sen!2sin" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--Footer start-->
+
 </body>
 </html>
