@@ -1,22 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/029a190c6b.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./../css/footer.css">
     <link rel="stylesheet" href="./../css/index.css">
-
+    <style>
+        .sticky-img {
+            position: -webkit-sticky; 
+            position: sticky;
+            top: 200px; 
+            z-index: 1000;
+            height:50px;
+        }
+        .sticky-img2 {
+            position: -webkit-sticky; 
+            position: sticky;
+            top: 400px; 
+            z-index: 1000;
+            height:50px;
+        }
+        .btn {
+            color: black;
+            background-color: white;
+            border: 1px solid black;
+        }
+        .btn:hover {
+            color: white;
+            background-color: black;
+        }
+       
+        .zoom-image {
+            transition: 2.3s;
+        }
+        .zoom-image:hover {
+            transform: scale(1.3);
+            opacity: 0.3;
+        }
+    </style>
 </head>
 <body>
-    <!--navbar is started-->
+    <!-- Navbar starts -->
     <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
         <div class="container-fluid shadow">
             <a class="navbar-brand" href="#">
@@ -43,17 +74,19 @@
             </div>
         </div>
     </nav>
-    <!--navbar is ended--><br><br><br><br><br>
+    <!-- Navbar ends -->
+    <br><br><br><br><br>
+
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner" data-bs-interval="1000">
             <div class="carousel-item active">
-                <img src="./imgs/bag.jpeg" class="d-block w-100 rounded-5 banner-flex" width=80% height="450px" alt="pom1">
+                <img src="./imgs/bag.jpeg" class="d-block w-100 rounded-5 banner-flex" width="80%" height="450px" alt="pom1">
             </div>
             <div class="carousel-item">
-                <img src="./imgs/carate.jpeg" class="d-block w-100 rounded-5 banner-flex" width=80% height="450px" alt="pom1">
+                <img src="./imgs/carate.jpeg" class="d-block w-100 rounded-5 banner-flex" width="80%" height="450px" alt="pom1">
             </div>
             <div class="carousel-item">
-                <img src="./imgs/pom3.jpeg" class="d-block w-100 rounded-5 banner-flex" width=80% height="450px" alt="pom3">
+                <img src="./imgs/pom3.jpeg" class="d-block w-100 rounded-5 banner-flex" width="80%" height="450px" alt="pom3">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -65,10 +98,14 @@
             <span class="visually-visible">Next</span>
         </button>
     </div>
-    <br>
+    
+     <img src="./icons/whatsap.jpeg" class="sticky-img img-fluid" alt="Sticky Image"><br><br>
+     <img src="./icons/phone.jpeg" class="sticky-img2 img-fluid" alt="Sticky Image2"><br><br>
+   
     <center>
-        <h1 >Tour to our farm</h1>
+        <h1>Tour to our farm</h1>
         <hr class="hr">
+       
         <div class="justify-content-evenly d-flex">
             <button class="btn" onclick="changePlanting()">Planting</button>
             <button class="btn" onclick="changeCultivation()">Cultivation</button>
@@ -81,45 +118,43 @@
                 <img src="./../imgs/bag.jpeg" class="card-img-top img-fluid" id="media" alt="pome">
                 <div class="card-body">
                     <h5 class="card-title" id="title">baby flowers</h5>
-                    <p class="card-text" id="descript">This step is making flowers starting.After this stage of flowers becomes fruit which is very juicy and tasty.</p>
+                    <p class="card-text" id="descript">This step is making flowers starting. After this stage of flowers becomes fruit which is very juicy and tasty.</p>
                     <a href="review.html" class="btn">Add Review</a>
                     <button onclick="Toggle1()" id="btnh1" class="btn1 border-0"><i class="fa-solid fa-heart mt-1 fs-2"></i></button>
                 </div>
             </div>
         </div>
     </center>
+
    
+
     <script src="https://kit.fontawesome.com/0dcf08ad5b.js" crossorigin="anonymous"></script>
-    <!--footer is started-->
-    <!--Footer start-->
-  <footer class="shadow">
-    <div class="container pt-3 mt-3">
-      <div class="row  justify-content-center">
-        <div class="col-md-4 col-sm-12 footer-section ">
-          <h3>Quick Links</h3>
-          <ul>
-            <li type="none" class="footer-nav"><a href="./../index.html" class="bb">Home</a></li>
-            <li type="none" class="footer-nav"><a href="./../pages/about-us.html" class="bb">About Us</a></li>
-            <li type="none" class="footer-nav"><a href="./../pages/contact.html" class="bb">Contact</a></li>
-            <li type="none" class="footer-nav"><a href="./../pages/review.html" class="bb">review</a></li>
-          </ul>
+    <!-- Footer starts -->
+    <footer class="shadow">
+        <div class="container pt-3 mt-3">
+            <div class="row justify-content-center">
+                <div class="col-md-4 col-sm-12 footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li type="none" class="footer-nav"><a href="./../index.html" class="bb">Home</a></li>
+                        <li type="none" class="footer-nav"><a href="./../pages/about-us.html" class="bb">About Us</a></li>
+                        <li type="none" class="footer-nav"><a href="./../pages/contact.html" class="bb">Contact</a></li>
+                        <li type="none" class="footer-nav"><a href="./../pages/review.html" class="bb">Review</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-12 footer-section">
+                    <h3>Contact Us</h3>
+                    &nbsp;&nbsp;  &nbsp; <i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;<a href="mailto:sakshishewale2808@gmail.com" class="bb footer-nav">Mail</a><br>
+                    &nbsp;&nbsp;  &nbsp; <i class="fa-solid fa-phone"></i>&nbsp;&nbsp;&nbsp;<a href="tel:9823882548" class="bb footer-nav">Call</a><br>
+                    &nbsp;&nbsp; &nbsp; <i class="fa-brands fa-square-whatsapp"></i>&nbsp;&nbsp;&nbsp;<a href="http://wa.me/+919823882548" class="bb footer-nav">WhatsApp</a><br>
+                </div>
+                <div class="col-md-4 col-sm-12 footer-section">
+                    <h3>Location</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.584663704855!2d74.246021574034!3d20.605012380940387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bde89a439777c9f%3A0x730345b3dc15261a!2sS%20S%20FARMS%20Satana!5e0!3m2!1sen!2sin!4v1716020055291!5m2!1sen!2sin" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
         </div>
-        <div class="col-md-4 col-sm-12 footer-section">
-          <h3>Contact Us</h3>
-            &nbsp;&nbsp;  &nbsp; <i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;<a
-            href="mailto: sakshishewale2808@gmail.com" class="bb footer-nav"> Mail</a> <br>
-            &nbsp;&nbsp;  &nbsp; <i class="fa-solid fa-phone"></i>&nbsp;&nbsp;&nbsp;<a href="tel:9823882548"
-            class="bb footer-nav">Call</a>  <br>
-            &nbsp;&nbsp; &nbsp; <i class="fa-brands fa-square-whatsapp"></i>&nbsp;&nbsp;&nbsp;<a href="http://wa.me/+91 9823882548"
-            class="bb footer-nav">Whatsapp</a> <br>
-        </div>
-        <div class="col-md-4 col-sm-12 footer-section">
-          <h3>Location</h3>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.584663704855!2d74.246021574034!3d20.605012380940387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bde89a439777c9f%3A0x730345b3dc15261a!2sS%20S%20FARMS%20Satana!5e0!3m2!1sen!2sin!4v1716020055291!5m2!1sen!2sin" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <script src="./../js/index.js"></script>
+    </footer>
+    <script src="./../js/index.js"></script>
 </body>
 </html>
